@@ -1,0 +1,3 @@
+{
+"window":{"dll":'ext/Module.dll',"class":"Module.Window","methods":"alert,alert2"}
+}
