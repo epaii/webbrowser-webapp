@@ -1,7 +1,8 @@
 {
-"formTitle":"≤‚ ‘",
-"formBorderStyle":"1",
-"windowState":"0",
-"icon":"icon/logo.ico",
-"root":"assets/index.html"
+  "configId": "0",
+  "formTitle": "≤‚ ‘",
+  "formBorderStyle": "1",
+  "windowState": "0",
+  "icon": "icon/logo.ico",
+  "root": "assets/index.html"
 }
