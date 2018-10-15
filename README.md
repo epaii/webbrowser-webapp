@@ -35,3 +35,5 @@ system支持的方法请查看 [system模块](https://github.com/epaii/webbrowse
 
 
 ### 如何编写自己的模块
+
+请查看 [webbrowser-js-bridge开发指南](https://github.com/epaii/webbrowser-js-bridge)
