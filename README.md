@@ -31,7 +31,7 @@
  sys.alert({msg:"测试"});
 ```
 
-system支持的方法请查看
+system支持的方法请查看 [system模块](https://github.com/epaii/webbrowser-module-system)
 
 
 ### 如何编写自己的模块
