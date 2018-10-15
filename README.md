@@ -2,11 +2,13 @@
 
 最简单的用HTML+CSS+JS开发桌面应用的方法。
 
+
 ### 特性
 
 	1 支持HTML+CSS+JS
 	2 js通过require(name)方法加载模块。
 	3 自定义模块开发支持
+	4 本项目基于[webbrowser-js-bridge项目](https://github.com/epaii/webbrowser-js-bridge)
 	
 
 
