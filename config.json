@@ -7,5 +7,6 @@
   "test": "1",
   "configId": "1",
   "window_width": "300",
-  "window_height": "400"
+  "window_height": "400",
+  "device_id":"ddd"
 }
