@@ -2,10 +2,10 @@
   "formTitle": "≤‚ ‘",
   "formBorderStyle": "1",
   "windowState": "0",
-  "icon": "icon/logo.ico",
   "root": "http://master.zhengwu_yitiji-dazheng-web.wenshi.jt/default.html",
   "test": "1",
   "configId": "1",
   "window_width": "300",
-  "window_height": "400"
+  "window_height": "400",
+  "device_id":"dddddddddddddddddddddddddddddddddd"
 }
