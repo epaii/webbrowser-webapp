@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <title></title>
+    
+</head>
+<body style="background-color:transparent">
+  
+  <script>
+  var swfPath= "file:///E:/yitiji/ws/repos/WebApp/bin/Debug/assets/window/1020000321.swf";
+  var docHeight=  window.screen.availHeight;
+  var html = '<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="100%" height="'+docHeight+'" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0">'
+			+ '<param name="loop" value="true">'
+			+ '<param name="play" value="true">'
+			+ '<param name="wmode" value="transparent">'
+			+ '<param name="allowFullScreen" value="true">'
+			+ '<param name="allownetworking" value="internal">'
+			+ '<param name="allowscriptaccess" value="never">'
+			+ '<param name="AutoStart" value="1">'
+			+ '<param name="ShowStatusBar" value="1">'
+			+ '<param name="src" value="'+swfPath+'">'
+			+ '<param name="allowfullscreen" value="true">'
+			+ '<embed type="application/x-shockwave-flash" width="100%" height="'+docHeight+'" src="'+swfPath+'" allowscriptaccess="never" allownetworking="internal" allowfullscreen="true" wmode="transparent" play="true" loop="true" autostart="true">'
+			+ '</object>';
+
+	document.write(html);
+  </script>
+   
+</body>
+</html>

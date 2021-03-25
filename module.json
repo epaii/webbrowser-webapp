@@ -1,3 +1,38 @@
 {
-"system":{"dll":"ext/system/System.dll","class":"WenshiModule.SystemModule","methods":"alert,ajax,setRunningValue,getRunningValue,isTest","initBindTo": "JsBridge"}
+  "cli": {
+    "dll": "E:/yitiji/ws/repos/cli/cli/bin/Debug/cli.dll",
+    "class": "cli.Cli",
+    "methods": "runExe,write"
+  },
+  "system": {
+    "dll": "E:/yitiji/ws/repos/rlrtest/ClassLibrary1/bin/Debug/System.dll",
+    "class": "WenshiModule.SystemModule",
+    "methods": "alert,ajax,setRunningValue,getRunningValue,isTest,pwd,getModuleConfig,getPathInModuleConfig,parseHtmlToPdf,getRootConfig,getPathInRootConfig,exit,file_get_content",
+    "initBindTo": "JsBridge"
+  },
+  "IDCard": {
+    "dll": "E:/yitiji/ws/repos/idcard/moudle/IDCard/bin/Debug/IDCard.dll",
+    "class": "WenshiModule.IDCard",
+    "methods": "isHaveIdcard,getIdcardInfo"
+  },
+  "win": {
+    "dll": "E:/yitiji/ws/repos/module_other/window/window/bin/Debug/window.dll",
+    "class": "epii.window",
+    "methods": "openWindow,closeWindow,screenWidth,screenHeight,data,id,config"
+  },
+  "web-printer": {
+    "dll": "E:/yitiji/ws/repos/WebPrinter/bin/Debug/WebPrinter.dll",
+    "class": "WebPrinter.Printer",
+    "methods": "print,printA3,printA4"
+  },
+  "GaoPaiYi": {
+    "dll": "E:/yitiji/ws/repos/module_other/gaopaiyi/gaopaiyi/bin/Debug/gaopaiyi.dll",
+    "class": "epii.GaoPaiYi",
+    "methods": "take"
+  },
+  "Camera": {
+    "dll": "E:/yitiji/ws/repos/Camera/bin/Debug/Camera.dll",
+    "class": "WenshiModule.SheXiangTou",
+    "methods": "open,close,takephoto"
+  }
 }

@@ -1,11 +1,14 @@
 {
   "formTitle": "测试",
-  "formBorderStyle": "1",
-  "windowState": "0",
-  "root": "http://master.zhengwu_yitiji-dazheng-web.wenshi.jt/default.html",
+  "formBorderStyle": "2",
+  "windowState": "1",
+  "root": "http://epii.web.wenshi.wszx.cc/com_type.html",
+  "root1": "E:/yitiji/ws/repos/WebApp/bin/Debug/assets/camera.html",
+  "rlr_dir": "E:/yitiji/ws/repos/WebPrinter/bin/Debug/rlr",
   "test": "1",
-  "configId": "1",
   "window_width": "300",
   "window_height": "400",
-  "device_id":"dddddddddddddddddddddddddddddddddd"
+  "device_id": "dddddddddddddddddddddddddddddddddd",
+  "renlirong": 1,
+  "configId": 1
 }

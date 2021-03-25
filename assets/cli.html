@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <title></title>
+    
+</head>
+<body>
+   <script>
+   
+   JsBridgeReady = function()
+   {
+     var cli= JsBridge.require("cli");
+	cli.runExe({
+	"exe":"E:/yitiji/ws/ruanjian-list/window-bin-64/php7.2.10/php.exe",
+	"args":"E:/yitiji/ws/repos/cli/cli/bin/Debug/phpsdk/test.php 13023234234",
+	"dataType":"json",
+	"onReadLine":function(data)
+	{
+	 
+		var string  = window.prompt(data.tip);
+	 
+		cli.write({"pid":data.pid,"string":string});
+	 
+	
+	
+	}
+	},function(ret){
+		alert(ret.data.msg);
+	});
+   }
+   
+   </script>
+   test
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <title></title>
+    
+</head>
+<body>
+    <button onclick="printer('file:///C:/Users/Administrator/Desktop/91371623MA3PRHYF8A-01-0.html','A3',1)">testA3</button>
+    <button onclick="printer('file:///C:/Users/Administrator/Desktop/91371623MA3PRHYF8A-07-0.html','A4',1)">testA4</button>
+ 
+   <script>
+   
+   
+   function onWindowClose()
+   {
+		alert("ddddd");
+		return false;
+   }
+			var web_printer;
+			var can_print = true;
+			JsBridgeReady = function () {
+
+				web_printer = JsBridge.require("web-printer");
+			};
+
+			function printer(url, pageSize,landscape) {
+
+				if (web_printer) {
+					if(!can_print) return;
+					can_print = false;
+					web_printer["print" + pageSize]({
+						url: url,
+						 landscape:landscape?1:0,
+						'id': "test33333"+new Date().getTime(),
+						rotate:180
+					}, function (ret, err) {
+						can_print = true;
+						alert("完成");
+					   // alert(err.msg);
+					});
+				}
+			}
+   
+   </script>
+    
+</body>
+</html>

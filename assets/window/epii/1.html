@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <title></title>
+    
+</head>
+<body style="background:transparent">
+<button  onclick="guanbi();">子页面</button>
+   <script>
+   
+function test() {
+var objShell= new ActiveXObject("WScript.Shell");
+objShell.Run("cmd.exe /c start \"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe\" http://www.baidu.com",0,true);
+}
+ 
+   
+   function guanbi()
+   {
+   JsBridge.require("cli").runExe({
+			"exe":"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe",
+			"args":"http://www.baidu.com",
+			"dataType":"text"
+			 });
+	JsBridge.require("win").execScript({
+	"id":"root",
+	"function_name":"alert",
+	"args":["dddd"]
+	});
+	return;
+   	JsBridge.require("win").openWindow({url:"E:/yitiji/ws/repos/WebApp/bin/Debug/assets/window/epii/2.html",windowState:2,data:{a:1,b:2}},function(data){
+		  alert(data.msg+"okokok");
+	   });
+  
+   }
+   
+   </script>
+  
+</body>
+</html>

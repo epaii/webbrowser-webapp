@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <title></title>
+    
+</head>
+<body>
+ 
+   <script>
+   
+   JsBridgeReady = function()
+   {
+     var IDCard= JsBridge.require("IDCard");
+	IDCard.isHaveIdcard({}
+	,function(ret,error){
+	if(ret)
+	{
+	IDCard.getIdcardInfo({},function(ret11,error11){
+		alert(JSON.stringify(ret11));
+		alert(JSON.stringify(error11));
+	});
+	}else 
+		alert(error.msg);
+	});
+   }
+   
+   </script>
+   test
+</body>
+</html>

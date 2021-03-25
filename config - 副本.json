@@ -1,0 +1,12 @@
+{
+  "formTitle": "测试",
+  "formBorderStyle": "1",
+  "windowState": "0",
+  "root": "http://192.168.0.169/app/fayuan/client/index.html",
+  "test": "1",
+  "window_width": "300",
+  "window_height": "400",
+  "device_id": "dddddddddddddddddddddddddddddddddd",
+  "renlirong": 1,
+  "configId":1
+}

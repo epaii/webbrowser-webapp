@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <title></title>
+    
+</head>
+<body>
+   <div>
+        <label><button id="a" onclick="a()">打开摄像头!!!!!!!!!!!!!!!</button></label>
+        <label><button id="b" onclick="b()">关闭摄像头</button></label>
+        <label><button id="c" onclick="c()">拍摄</button></label>
+    </div>
+   <script>
+  var fff;
+   JsBridgeReady = function()
+   {
+    fff = JsBridge.require("Camera");
+	 
+   }
+   function a(){
+        fff.open({x:0,y:80,width:500,height:400,deviceId:0},function(ret,err){
+            if(ret) alert(ret.msg);
+            else alert(err.msg);
+        });
+    }
+    function b(){
+        fff.close({},function(ret,err){
+            if(ret){alert(ret.msg);
+            }else{
+                alert(err.msg);
+            }
+
+        });
+    }
+    function c(){
+        fff.takephoto({width:500,height:400,quality:50,path:"C:/ws/dazheng/../runtime/qian_zi_biao/aaaaaaa.jpg"},function(ret,err){
+            if(ret){alert(ret.msg);
+            }else{
+                alert(err.msg);
+            }
+
+        });
+    }
+   
+   </script>
+   test
+</body>
+</html>
